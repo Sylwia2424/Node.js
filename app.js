@@ -7,7 +7,7 @@ const lastNames = ['Kowalski', 'Nowak', 'Las', 'Cholewa'];
 
 const randChoice = arr => {
   console.log(arr);
-  return arr[Math.floor(arr.lenght * Math.random())];
+  return arr[Math.floor(arr.length * Math.random())];
 };
 
 const people = [];
