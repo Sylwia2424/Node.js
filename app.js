@@ -14,18 +14,18 @@ const people = [];
 
 for (let i = 0; i < 20; i++){
   const gender = randChoice(genders); 
-  let age = Math.floor((Math.random() * 100) +1); 
+  const lastName =  randChoice(lastNames);
+  let age = Math.floor((Math.random() * 100)); 
 
-  if(gender === "male"){
-    maleName = randChoice(maleNames);
-    lastName = randChoice(lastNames);
-    people.push({ name:maleName, surmane:lastName, gender, age });
+  if(gender === 'male'){
+    name = randChoice(maleNames);
 
   } else {
-    femaleName = randChoice(femaleNames);
-    lastName = randChoice(lastNames);
-    people.push({ name:femaleName, surmane:lastName, gender, age });
+    name = randChoice(femaleNames);
+    //lastName = randChoice(lastNames);
   }
+  people.push({ name, lastName, gender, age });
+
 }
 console.log(people);
 
